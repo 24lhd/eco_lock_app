@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_app">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/set_pin_lock_size_ic"
+            android:layout_height="@dimen/set_pin_lock_size_ic"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_setup_lock" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/set_pin_margin_view"
+            android:gravity="center"
+            android:text="@string/set_pin_txt_title_set_up_pin_code"
+            android:textColor="@color/color_white" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/set_pin_margin_view"
+            android:gravity="center"
+            android:text="@string/set_pin_txt_body_set_4_pin_code"
+            android:textColor="@color/color_white" />
+
+        <TextView
+            android:id="@+id/set_pin_txt_input_code"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:gravity="center"
+            android:hint="@string/set_pin_confirm_pin_code1_1"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:password="true"
+            android:textColor="@color/color_white"
+            android:textColorHint="@color/color_white" />
+
+        <!--<com.lhd.mvp.setpin.CustomKeyboardView-->
+        <!--android:id="@+id/keyboard_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:visibility="visible" />-->
+        <LinearLayout
+            android:id="@+id/layout_pin_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:padding="@dimen/pin_margin">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_set_pin_1"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:layout_width="@dimen/w_pin"
+                    android:layout_height="@dimen/h_pin"
+                    android:layout_margin="@dimen/pin_margin"
+                    android:background="@color/background_none"
+
+                    android:text="1"
+                    android:textColor="@color/color_white"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_set_pin_2"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:layout_width="@dimen/w_pin"
+                    android:layout_height="@dimen/h_pin"
+                    android:layout_margin="@dimen/pin_margin"
+                    android:background="@color/background_none"
+
+                    android:text="2"
+                    android:textColor="@color/color_white"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_set_pin_3"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:layout_width="@dimen/w_pin"
+                    android:layout_height="@dimen/h_pin"
+                    android:layout_margin="@dimen/pin_margin"
+                    android:background="@color/background_none"
+
+                    android:text="3"
+                    android:textColor="@color/color_white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_set_pin_4"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:layout_width="@dimen/w_pin"
+                    android:layout_height="@dimen/h_pin"
+                    android:layout_margin="@dimen/pin_margin"
+                    android:background="@color/background_none"
+                    android:text="4"
+                    android:textColor="@color/color_white"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_set_pin_5"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:layout_width="@dimen/w_pin"
+                    android:layout_height="@dimen/h_pin"
+                    android:layout_margin="@dimen/pin_margin"
+                    android:background="@color/background_none"
+
+                    android:text="5"
+                    android:textColor="@color/color_white"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_set_pin_6"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:layout_width="@dimen/w_pin"
+                    android:layout_height="@dimen/h_pin"
+                    android:layout_margin="@dimen/pin_margin"
+                    android:background="@color/background_none"
+
+                    android:text="6"
+                    android:textColor="@color/color_white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_set_pin_7"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:layout_width="@dimen/w_pin"
+                    android:layout_height="@dimen/h_pin"
+                    android:layout_margin="@dimen/pin_margin"
+                    android:background="@color/background_none"
+
+                    android:text="7"
+                    android:textColor="@color/color_white"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_set_pin_8"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:layout_width="@dimen/w_pin"
+                    android:layout_height="@dimen/h_pin"
+                    android:layout_margin="@dimen/pin_margin"
+                    android:background="@color/background_none"
+
+                    android:text="8"
+                    android:textColor="@color/color_white"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_set_pin_9"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:layout_width="@dimen/w_pin"
+                    android:layout_height="@dimen/h_pin"
+                    android:layout_margin="@dimen/pin_margin"
+                    android:background="@color/background_none"
+
+                    android:text="9"
+                    android:textColor="@color/color_white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:layout_width="@dimen/w_pin"
+                    android:layout_height="@dimen/h_pin"
+                    android:layout_margin="@dimen/pin_margin"
+                    android:background="@color/background_none"
+                    android:textColor="@color/color_white"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_set_pin_0"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:layout_width="@dimen/w_pin"
+                    android:layout_height="@dimen/h_pin"
+                    android:layout_margin="@dimen/pin_margin"
+                    android:background="@color/background_none"
+
+                    android:text="0"
+                    android:textColor="@color/color_white"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/btn_set_pin_back"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:layout_width="@dimen/w_pin"
+                    android:layout_height="@dimen/h_pin"
+                    android:layout_margin="@dimen/pin_margin"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_backspace_white_36dp"
+                    android:textColor="@color/color_white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#0d244a</color>-->
+    <!--<color name="colorPrimaryDark">#0d244a</color>-->
+    <!--<color name="colorAccent">#04e941</color>-->
+    <!--<color name="notifi_permisstion_color_bg">#e2e2e2</color>-->
+    <!--<color name="background_app">#0d244a</color>-->
+    <!--<color name="white">#ffffff</color>-->
+    <!--<color name="color_white">#fff</color>-->
+    <!--<color name="background_lock">#b5a1a1a1</color>-->
+    <!--<color name="background_none">#00ffffff</color>-->
+    <!--<color name="color_view_setting">#c2c2c2</color>-->
+    <!--<color name="btn_ads">#fefefe</color>-->
+    <!--<color name="red">#ff0008</color>-->
+    <color name="background_ads">#53d25c</color>
+    <color name="text_ads">#fefefe</color>
+    <color name="colorTran">#00ffffff</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#3F51B5</color>
+    <color name="colorAccent">#04e941</color>
+    <color name="notifi_permisstion_color_bg">#e2e2e2</color>
+    <color name="background_app">#0d244a</color>
+    <color name="white">#ffffff</color>
+    <color name="color_white">#fff</color>
+    <color name="background_lock">#b5a1a1a1</color>
+    <color name="background_none">#00ffffff</color>
+    <color name="color_view_setting">#c2c2c2</color>
+    <color name="red">#ff0008</color>
+
+</resources>

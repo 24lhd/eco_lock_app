@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/item_list_app_txt_title"-->
+    <!--style="@style/TextAppearance.AppCompat.Title"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="#263238"-->
+    <!--android:padding="@dimen/item_list_app_txt_title_padding_conent"-->
+    <!--android:text="@string/list_app_txt_title_locked"-->
+    <!--android:textColor="@color/color_white" />-->
+
+    <!--<ListView-->
+    <!--android:id="@+id/item_list_app_rcv_list_locked_app"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:padding="@dimen/item_list_app_txt_title_padding_conent" />-->
+
+    <!--</LinearLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<TextView-->
+        <!--android:id="@+id/title_app"-->
+        <!--style="@style/TextAppearance.AppCompat.Title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="#263238"-->
+        <!--android:padding="@dimen/item_list_app_txt_title_padding_conent"-->
+        <!--android:text="@string/list_app_txt_title_unlock"-->
+        <!--android:textColor="@color/color_white" />-->
+
+        <!--<ListView-->
+        <!--android:id="@+id/item_list_app_rcv_list_unlock_app"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:layout_below="@+id/title_app"-->
+        <!--android:padding="@dimen/item_list_app_txt_title_padding_conent" />-->
+        <ExpandableListView
+            android:id="@+id/elv_list_app"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:groupIndicator="@null"></ExpandableListView>
+
+        <ProgressBar
+            android:id="@+id/prog_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

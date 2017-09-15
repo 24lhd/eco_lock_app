@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lhd.applock">
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <!--<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />-->
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <!--<uses-permission android:name="android.permission.WAKE_LOCK" />-->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <activity
+            android:name="com.lhd.mvp.main.MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.lhd.mvp.toprunapp.StateDeviceService" />
+
+        <activity android:name="com.lhd.Demo">
+
+        </activity>
+        <activity android:name="com.lhd.DemoFingerPoint">
+
+        </activity>
+        <activity android:name="com.lhd.mvp.listapp.ListAppActivity">
+
+        </activity>
+        <activity android:name="com.lhd.TestFingerPrint">
+
+        </activity>
+        <activity
+            android:name="com.lhd.mvp.lockapp.LockAppActivity"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.lhd.mvp.setting.Settings"
+            android:label="@string/app_settings"
+            android:parentActivityName="com.lhd.mvp.main.MainActivity" />
+
+        <!--<service android:name="com.lhd.mvp.toprunapp.MyService" />-->
+        <!--<receiver android:name="com.lhd.mvp.toprunapp.StateScreen">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.SCREEN_ON" />-->
+        <!--<action android:name="android.intent.action.SCREEN_OFF" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="1708842fbfbb84d1cefd83efb333c22afb2cfe0c" />
+        <activity
+            android:name="com.lhd.mvp.setpin.ChangePinActivity"
+            android:windowSoftInputMode="stateHidden" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>

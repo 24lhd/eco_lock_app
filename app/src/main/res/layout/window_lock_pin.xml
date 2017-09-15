@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_app"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/bar_lock_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <!--android:layout_marginTop="24dp"-->
+        <ImageView
+            android:id="@+id/lock_view_im_ic_app"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/lock_view_tv_title_app"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="4dp"
+            android:singleLine="true"
+            android:textColor="@color/color_white"
+            android:textSize="26sp" />
+
+        <ImageView
+            android:id="@+id/lock_view_im_ic_fingersprint"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            android:src="@drawable/ic_fingerprint_no_active" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/bar_lock_app">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+                <com.lhd.module.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    app:ci_height="10dp"
+                    app:ci_width="10dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_noti_pin_lock"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/txt_pin_lock"
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/hint_pin_lock"
+
+                android:maxLength="4"
+                android:password="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/color_white" />
+
+
+            <LinearLayout
+                android:id="@+id/layout_pin_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:padding="@dimen/pin_margin">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        style="@style/TextAppearance.AppCompat.Display1"
+                        android:layout_width="@dimen/w_pin"
+                        android:layout_height="@dimen/h_pin"
+                        android:layout_margin="@dimen/pin_margin"
+                        android:background="@color/background_none"
+                        android:onClick="onPinCick"
+                        android:text="1"
+                        android:textColor="@color/color_white"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button6"
+                        style="@style/TextAppearance.AppCompat.Display1"
+                        android:layout_width="@dimen/w_pin"
+                        android:layout_height="@dimen/h_pin"
+                        android:layout_margin="@dimen/pin_margin"
+                        android:background="@color/background_none"
+                        android:onClick="onPinCick"
+                        android:text="2"
+                        android:textColor="@color/color_white"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        style="@style/TextAppearance.AppCompat.Display1"
+                        android:layout_width="@dimen/w_pin"
+                        android:layout_height="@dimen/h_pin"
+                        android:layout_margin="@dimen/pin_margin"
+                        android:background="@color/background_none"
+                        android:onClick="onPinCick"
+                        android:text="3"
+                        android:textColor="@color/color_white"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        style="@style/TextAppearance.AppCompat.Display1"
+                        android:layout_width="@dimen/w_pin"
+                        android:layout_height="@dimen/h_pin"
+                        android:layout_margin="@dimen/pin_margin"
+                        android:background="@color/background_none"
+                        android:onClick="onPinCick"
+                        android:text="4"
+                        android:textColor="@color/color_white"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button"
+                        style="@style/TextAppearance.AppCompat.Display1"
+                        android:layout_width="@dimen/w_pin"
+                        android:layout_height="@dimen/h_pin"
+                        android:layout_margin="@dimen/pin_margin"
+                        android:background="@color/background_none"
+                        android:onClick="onPinCick"
+                        android:text="5"
+                        android:textColor="@color/color_white"
+                        android:textStyle="bold" />
+
+                    <Button
+                        style="@style/TextAppearance.AppCompat.Display1"
+                        android:layout_width="@dimen/w_pin"
+                        android:layout_height="@dimen/h_pin"
+                        android:layout_margin="@dimen/pin_margin"
+                        android:background="@color/background_none"
+                        android:onClick="onPinCick"
+                        android:text="6"
+                        android:textColor="@color/color_white"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        style="@style/TextAppearance.AppCompat.Display1"
+                        android:layout_width="@dimen/w_pin"
+                        android:layout_height="@dimen/h_pin"
+                        android:layout_margin="@dimen/pin_margin"
+                        android:background="@color/background_none"
+                        android:onClick="onPinCick"
+                        android:text="7"
+                        android:textColor="@color/color_white"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button4"
+                        style="@style/TextAppearance.AppCompat.Display1"
+                        android:layout_width="@dimen/w_pin"
+                        android:layout_height="@dimen/h_pin"
+                        android:layout_margin="@dimen/pin_margin"
+                        android:background="@color/background_none"
+                        android:onClick="onPinCick"
+                        android:text="8"
+                        android:textColor="@color/color_white"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        style="@style/TextAppearance.AppCompat.Display1"
+                        android:layout_width="@dimen/w_pin"
+                        android:layout_height="@dimen/h_pin"
+                        android:layout_margin="@dimen/pin_margin"
+                        android:background="@color/background_none"
+                        android:onClick="onPinCick"
+                        android:text="9"
+                        android:textColor="@color/color_white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/TextAppearance.AppCompat.Display1"
+                        android:layout_width="@dimen/w_pin"
+                        android:layout_height="@dimen/h_pin"
+                        android:layout_margin="@dimen/pin_margin"
+                        android:background="@color/background_none"
+                        android:textColor="@color/color_white"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button5"
+                        style="@style/TextAppearance.AppCompat.Display1"
+                        android:layout_width="@dimen/w_pin"
+                        android:layout_height="@dimen/h_pin"
+                        android:layout_margin="@dimen/pin_margin"
+                        android:background="@color/background_none"
+                        android:onClick="onPinCick"
+                        android:text="0"
+
+                        android:textColor="@color/color_white"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        style="@style/TextAppearance.AppCompat.Display1"
+                        android:layout_width="@dimen/w_pin"
+                        android:layout_height="@dimen/h_pin"
+                        android:layout_margin="@dimen/pin_margin"
+                        android:onClick="onBack"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_backspace_white_36dp"
+                        android:textColor="@color/color_white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

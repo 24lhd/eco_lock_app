@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="activity_horizontal_margin">54.00dp</dimen>
+	<dimen name="activity_vertical_margin">54.00dp</dimen>
+	<dimen name="appbar_padding_top">27.00dp</dimen>
+	<dimen name="chieu_rong_buttom_pin">253.13dp</dimen>
+	<dimen name="fab_margin">54.00dp</dimen>
+	<dimen name="h_pin">118.13dp</dimen>
+	<dimen name="item_app_magin_left">27.00dp</dimen>
+	<dimen name="item_list_app_txt_title_padding_conent">10.13dp</dimen>
+	<dimen name="margin_btn_pin">16.88dp</dimen>
+	<dimen name="notifi_permisstion_magin_left_right">16.88dp</dimen>
+	<dimen name="notifi_permisstion_padding_view">16.88dp</dimen>
+	<dimen name="pin_margin">13.50dp</dimen>
+	<dimen name="set_pin_lock_size_ic">432.00dp</dimen>
+	<dimen name="set_pin_margin_view">33.75dp</dimen>
+	<dimen name="w_pin">270.00dp</dimen>
+	<dimen name="wellcome_btn_magin_buttom">67.50dp</dimen>
+	<dimen name="wellcome_height_circle_indicator">162.00dp</dimen>
+	<dimen name="wellcome_height_layout_buttom">337.50dp</dimen>
+	<dimen name="wellcome_height_viewpager">1096.88dp</dimen>
+	<dimen name="wellcome_padding_view">16.88dp</dimen>
+	<dimen name="wellcome_width_layout_buttom">911.25dp</dimen>
+</resources>
